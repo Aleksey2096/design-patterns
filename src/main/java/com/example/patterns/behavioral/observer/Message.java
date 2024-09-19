@@ -1,13 +1,13 @@
 package com.example.patterns.behavioral.observer;
 
 public class Message {
-    final String messageContent;
+	final String messageContent;
 
-    public Message(final String m) {
-        this.messageContent = m;
-    }
+	public Message(String m) {
+		this.messageContent = m;
+	}
 
-    public String getMessageContent() {
-        return messageContent;
-    }
+	public String getMessageContent() {
+		return messageContent;
+	}
 }

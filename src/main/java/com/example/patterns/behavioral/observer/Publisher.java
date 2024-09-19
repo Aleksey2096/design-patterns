@@ -1,6 +1,6 @@
 package com.example.patterns.behavioral.observer;
 
-public interface Subject {
+public interface Publisher {
     void attach(Observer o);
 
     void detach(Observer o);
