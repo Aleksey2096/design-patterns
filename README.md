@@ -22,3 +22,8 @@ The Iterator pattern provides a way to access the elements of a collection or ag
 
 [Java example](src/main/java/com/example/patterns/behavioral/iterator/)
 
+### 5. Mediator
+The Mediator pattern centralizes complex communication and control logic between related objects, reducing the direct dependencies between them. Instead of having objects reference each other directly, they communicate through a mediator object, which coordinates their interactions. This pattern promotes loose coupling, making the system easier to maintain and extend. It is especially useful in systems with multiple classes that need to collaborate in complex ways.
+
+[Java example](src/main/java/com/example/patterns/behavioral/mediator/)
+

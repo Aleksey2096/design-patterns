@@ -1,30 +1,30 @@
 package com.example.patterns.behavioral.mediator;
 
 public abstract class User {
-    private final IChatRoom mediator;
+	private final Messenger messenger;
 
-    private final String id;
-    private final String name;
+	private final String id;
+	private final String name;
 
-    public User(final IChatRoom room, final String id, final String name) {
-        this.mediator = room;
-        this.name = name;
-        this.id = id;
-    }
+	public User(Messenger room, String id, String name) {
+		this.messenger = room;
+		this.name = name;
+		this.id = id;
+	}
 
-    public abstract void send(String msg, String userId);
+	public abstract void send(String msg, String userId);
 
-    public abstract void receive(String msg);
+	public abstract void receive(String msg);
 
-    public IChatRoom getMediator() {
-        return mediator;
-    }
+	public Messenger getMessenger() {
+		return messenger;
+	}
 
-    public String getId() {
-        return id;
-    }
+	public String getId() {
+		return id;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getName() {
+		return name;
+	}
 }

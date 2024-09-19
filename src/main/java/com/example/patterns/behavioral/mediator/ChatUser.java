@@ -2,19 +2,18 @@ package com.example.patterns.behavioral.mediator;
 
 public class ChatUser extends User {
 
-    public ChatUser(final IChatRoom room, final String id, final String name) {
-        super(room, id, name);
-    }
+	public ChatUser(Messenger chatRoom, String id, String name) {
+		super(chatRoom, id, name);
+	}
 
-    @Override
-    public void send(final String msg, final String userId) {
-        System.out.println(this.getName() + " :: Sending Message : " + msg);
-        getMediator().sendMessage(msg, userId);
-    }
+	@Override
+	public void send(String msg, String userReceiverId) {
+		System.out.println(this.getName() + " :: Sending Chat Message : " + msg);
+		getMessenger().sendMessage(msg, userReceiverId);
+	}
 
-    @Override
-    public void receive(final String msg) {
-        System.out.println(this.getName() + " :: Received Message : " + msg);
-    }
-
+	@Override
+	public void receive(String msg) {
+		System.out.println(this.getName() + " :: Received Chat Message : " + msg);
+	}
 }

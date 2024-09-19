@@ -2,7 +2,7 @@ package com.example.patterns.behavioral.mediator;
 
 public class Runner {
     public static void main(final String[] args) {
-        IChatRoom chatroom = new ChatRoom();
+        Messenger chatroom = new ChatRoom();
 
         User user1 = new ChatUser(chatroom, "1", "Alex");
         User user2 = new ChatUser(chatroom, "2", "Brian");
