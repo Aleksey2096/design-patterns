@@ -2,14 +2,14 @@ package com.example.patterns.behavioral.interpreter;
 
 public class Number implements Expression {
 
-    private final int n;
+	private final int value;
 
-    public Number(final int n) {
-        this.n = n;
-    }
+	public Number(int value) {
+		this.value = value;
+	}
 
-    @Override
-    public int interpret() {
-        return n;
-    }
+	@Override
+	public int interpret() {
+		return value;
+	}
 }
