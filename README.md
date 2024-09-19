@@ -37,3 +37,8 @@ The Observer pattern defines a one-to-many relationship between objects, where a
 
 [Java example](src/main/java/com/example/patterns/behavioral/observer/)
 
+### 8. Specification
+The Specification pattern allows for the creation of combinable, reusable business rules that can be applied to objects. It defines a criteria that can be checked against objects to see if they satisfy the given condition. Specifications can be chained together using logical operations (AND, OR, NOT), allowing for complex filtering and selection logic without hardcoding rules into the objects themselves. This pattern is often used in validation, querying, and filtering logic.
+
+[Java example](src/main/java/com/example/patterns/behavioral/specification/)
+
