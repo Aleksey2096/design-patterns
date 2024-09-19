@@ -2,64 +2,62 @@ package com.example.patterns.behavioral.memento;
 
 public class Originator {
 
-    private double x;
-    private double y;
+	private double x;
+	private double y;
+	private CareTaker careTaker;
 
-    private String lastUndoSavepoint;
-    CareTaker careTaker;
+	private String lastUndoSavepoint;
 
-    public Originator(final double x, final double y,
-                      final CareTaker careTaker) {
-        this.x = x;
-        this.y = y;
+	public Originator(double x, double y, CareTaker careTaker) {
+		this.x = x;
+		this.y = y;
+		this.careTaker = careTaker;
 
-        this.careTaker = careTaker;
+		createSavepoint("INITIAL");
+	}
 
-        createSavepoint("INITIAL");
-    }
+	public double getX() {
+		return x;
+	}
 
-    public double getX() {
-        return x;
-    }
+	public double getY() {
+		return y;
+	}
 
-    public double getY() {
-        return y;
-    }
+	public void setX(double x) {
+		this.x = x;
+	}
 
-    public void setX(final double x) {
-        this.x = x;
-    }
+	public void setY(double y) {
+		this.y = y;
+	}
 
-    public void setY(final double y) {
-        this.y = y;
-    }
+	public void createSavepoint(String savepointName) {
+		careTaker.saveMemento(new Memento(this.x, this.y), savepointName);
+		lastUndoSavepoint = savepointName;
+	}
 
-    public void createSavepoint(final String savepointName) {
-        careTaker.saveMemento(new Memento(this.x, this.y), savepointName);
-        lastUndoSavepoint = savepointName;
-    }
+	public void undo() {
+		setOriginatorState(lastUndoSavepoint);
+	}
 
-    public void undo() {
-        setOriginatorState(lastUndoSavepoint);
-    }
+	public void undo(String savepointName) {
+		setOriginatorState(savepointName);
+	}
 
-    public void undo(final String savepointName) {
-        setOriginatorState(savepointName);
-    }
+	public void undoAll() {
+		setOriginatorState("INITIAL");
+		careTaker.clearSavePoints();
+	}
 
-    public void undoAll() {
-        setOriginatorState("INITIAL");
-        careTaker.clearSavePoints();
-    }
+	@Override
+	public String toString() {
+		return "X: " + x + ", Y: " + y;
+	}
 
-    private void setOriginatorState(final String savepointName) {
-        Memento mem = careTaker.getMemento(savepointName);
-        this.x = mem.x();
-        this.y = mem.y();
-    }
-
-    @Override
-    public String toString() {
-        return "X: " + x + ", Y: " + y;
-    }
+	private void setOriginatorState(String savepointName) {
+		Memento mem = careTaker.getMemento(savepointName);
+		this.x = mem.x();
+		this.y = mem.y();
+	}
 }
