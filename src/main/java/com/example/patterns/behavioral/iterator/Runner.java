@@ -1,23 +1,23 @@
 package com.example.patterns.behavioral.iterator;
 
-public class Runner {
-    public static void main(final String[] args) {
-        ShapeStorage storage = new ShapeStorage();
-        storage.addShape("Polygon");
-        storage.addShape("Hexagon");
-        storage.addShape("Circle");
-        storage.addShape("Rectangle");
-        storage.addShape("Square");
+import java.util.ArrayList;
+import java.util.List;
 
-        ShapeIterator iterator = new ShapeIterator(storage.getShapes());
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-        System.out.println("Apply removing while iterating...");
-        iterator = new ShapeIterator(storage.getShapes());
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-            iterator.remove();
-        }
-    }
+public class Runner {
+	public static void main(String[] args) {
+		List<Employee> employees = new ArrayList<>();
+		employees.add(new Employee("Alice", 50000));
+		employees.add(new Employee("Bob", 60000));
+		employees.add(new Employee("Charlie", 70000));
+
+		Company company = new Company(employees);
+		Iterator<Employee> iterator = company.createIterator();
+
+		double totalSalary = 0;
+		while (iterator.hasNext()) {
+			totalSalary += iterator.next().getSalary();
+		}
+
+		System.out.println("Total salary: " + totalSalary);
+	}
 }
