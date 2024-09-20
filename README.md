@@ -52,3 +52,8 @@ The Strategy pattern defines a family of algorithms, encapsulates each one, and 
 
 [Java example](src/main/java/com/example/patterns/behavioral/strategy/)
 
+### 11. Template Method
+The Template Method pattern defines the skeleton of an algorithm in a base class but allows subclasses to override specific steps of the algorithm without changing its structure. This promotes code reuse while providing flexibility for subclasses to adapt behavior. It is often used in scenarios where multiple classes share common behavior but differ in specific details, such as in frameworks, code generation, or workflow processes.
+
+[Java example](src/main/java/com/example/patterns/behavioral/template_method/)
+
