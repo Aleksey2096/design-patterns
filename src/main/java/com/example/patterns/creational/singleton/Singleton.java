@@ -41,12 +41,11 @@ public class Singleton implements Serializable {
 	 * that loaded the singleton class.
 	 */
 	@SuppressWarnings("unused")
-	private static Class<?> getClass(final String classname)
-			throws ClassNotFoundException {
-		ClassLoader classLoader = Thread.currentThread()
-				.getContextClassLoader();
-		if (classLoader == null)
+	private static Class<?> getClass(final String classname) throws ClassNotFoundException {
+		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+		if (classLoader == null) {
 			classLoader = Singleton.class.getClassLoader();
+		}
 		return (classLoader.loadClass(classname));
 	}
 }
