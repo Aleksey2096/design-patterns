@@ -57,3 +57,10 @@ The Template Method pattern defines the skeleton of an algorithm in a base class
 
 [Java example](src/main/java/com/example/patterns/behavioral/template_method/)
 
+### 12. Visitor
+The Visitor pattern allows adding new operations to a class hierarchy without changing the classes themselves. It separates the logic of the operation from the objects on which it operates, by having a visitor object visit each element of the hierarchy and perform the appropriate action. This pattern is useful when operations need to be performed on many different kinds of objects that form a complex structure, such as in compiler design, object traversal, and rendering engines.
+
+[Java example](src/main/java/com/example/patterns/behavioral/visitor/)
+
+## Creational patterns
+

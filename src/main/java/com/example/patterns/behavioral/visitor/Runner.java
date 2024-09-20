@@ -1,7 +1,7 @@
 package com.example.patterns.behavioral.visitor;
 
 public class Runner {
-	public static void main(final String[] args) {
+	public static void main(String[] args) {
 		System.out.println("Before visitor......... \n");
 
 		HtmlTag parentTag = new HtmlParentElement("<html>");
