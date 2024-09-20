@@ -47,3 +47,8 @@ The State pattern allows an object to alter its behavior when its internal state
 
 [Java example](src/main/java/com/example/patterns/behavioral/state/)
 
+### 10. Strategy
+The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. The algorithm can vary independently from the client that uses it. This pattern promotes the Open/Closed Principle, as new strategies can be introduced without changing the context in which they are used. It's commonly applied in sorting algorithms, data compression, and payment processing systems.
+
+[Java example](src/main/java/com/example/patterns/behavioral/strategy/)
+
