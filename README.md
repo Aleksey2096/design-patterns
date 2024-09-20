@@ -69,3 +69,8 @@ The Abstract Factory pattern provides an interface for creating families of rela
 
 [Java example](src/main/java/com/example/patterns/creational/abstract_factory/)
 
+### 2. Builder
+The Builder pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations. This pattern is useful when creating an object that requires multiple steps or configurations, and when you want to hide the construction logic from the client. By using a builder, objects can be constructed incrementally and remain immutable or consistent. It is often applied when building products such as complex UI components or assembling data structures like JSON/XML objects.
+
+[Java example](src/main/java/com/example/patterns/creational/builder/) (This directory contains two examples. One of them, Form.java, demonstrates the Builder pattern, featuring a static class within a parent class.)
+
