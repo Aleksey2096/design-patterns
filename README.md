@@ -64,3 +64,8 @@ The Visitor pattern allows adding new operations to a class hierarchy without ch
 
 ## Creational patterns
 
+### 1. Abstract Factory
+The Abstract Factory pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes. This pattern allows clients to work with object families in a consistent way by relying on abstract interfaces rather than concrete implementations. It is commonly used when systems need to support multiple types of objects that are interrelated, such as creating UI components for different platforms (e.g., Windows, macOS, Linux) without modifying the client code.
+
+[Java example](src/main/java/com/example/patterns/creational/abstract_factory/)
+
