@@ -74,3 +74,8 @@ The Builder pattern separates the construction of a complex object from its repr
 
 [Java example](src/main/java/com/example/patterns/creational/builder/) (This directory contains two examples. One of them, Form.java, demonstrates the Builder pattern, featuring a static class within a parent class.)
 
+### 3. Factory Method
+The Factory Method pattern defines an interface for creating objects but allows subclasses to alter the type of objects that will be created. Instead of directly instantiating a class, clients rely on a factory method to create the objects, promoting loose coupling between the code that uses the objects and the actual object classes. This pattern is useful when the client does not need to know the specific class being instantiated, such as in plugin systems or class loaders.
+
+[Java example](src/main/java/com/example/patterns/creational/factory_method/)
+

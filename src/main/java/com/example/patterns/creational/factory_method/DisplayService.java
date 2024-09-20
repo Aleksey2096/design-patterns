@@ -2,11 +2,11 @@ package com.example.patterns.creational.factory_method;
 
 public abstract class DisplayService {
 
-    public void display() {
-        XMLParser parser = getParser();
-        String msg = parser.parse();
-        System.out.println(msg);
-    }
+	public void display() {
+		XMLParser parser = getParser();
+		String msg = parser.parse();
+		System.out.println(msg);
+	}
 
-    protected abstract XMLParser getParser();
+	protected abstract XMLParser getParser();
 }

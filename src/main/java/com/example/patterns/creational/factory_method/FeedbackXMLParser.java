@@ -1,6 +1,6 @@
 package com.example.patterns.creational.factory_method;
 
-public class FeedbackXML implements XMLParser {
+public class FeedbackXMLParser implements XMLParser {
 
     @Override
     public String parse() {
