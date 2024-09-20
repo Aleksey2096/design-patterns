@@ -79,3 +79,8 @@ The Factory Method pattern defines an interface for creating objects but allows 
 
 [Java example](src/main/java/com/example/patterns/creational/factory_method/)
 
+### 4. Prototype
+The Prototype pattern allows an object to create a copy of itself, enabling the creation of new objects by cloning an existing object, rather than instantiating new objects from scratch. This pattern is particularly useful when object creation is expensive or complex and you want to avoid redundant initialization. Prototypes can maintain their own internal states and be duplicated with minimal overhead. It is commonly used in systems that need to generate many similar objects, like in game development or document editors.
+
+[Java example](src/main/java/com/example/patterns/creational/prototype/)
+

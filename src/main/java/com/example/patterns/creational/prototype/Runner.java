@@ -1,26 +1,48 @@
 package com.example.patterns.creational.prototype;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Runner {
-    public static void main(final String[] args) {
-        AccessControl userAccessControl
-                = AccessControlProvider.getAccessControlObject("USER");
-        User user = new User("User A", "USER Level", userAccessControl);
+	public static void main(String[] args) {
+		List<Shape> shapes = new ArrayList<>();
+		List<Shape> shapesCopy = new ArrayList<>();
 
-        System.out.println("************************************");
-        System.out.println(user);
+		Circle circle = new Circle();
+		circle.x = 10;
+		circle.y = 20;
+		circle.radius = 15;
+		circle.color = "red";
+		shapes.add(circle);
 
-        userAccessControl = AccessControlProvider.getAccessControlObject(
-                "USER");
-        user = new User("User B", "USER Level", userAccessControl);
-        System.out.println("Changing access control of: " + user.getUserName());
-        user.getAccessControl().setAccess("READ REPORTS");
-        System.out.println(user);
+		Circle anotherCircle = (Circle) circle.clone();
+		shapes.add(anotherCircle);
 
-        System.out.println("************************************");
+		Rectangle rectangle = new Rectangle();
+		rectangle.width = 10;
+		rectangle.height = 20;
+		rectangle.color = "blue";
+		shapes.add(rectangle);
 
-        AccessControl managerAccessControl = AccessControlProvider
-                .getAccessControlObject("MANAGER");
-        user = new User("User C", "MANAGER Level", managerAccessControl);
-        System.out.println(user);
-    }
+		cloneAndCompare(shapes, shapesCopy);
+	}
+
+	private static void cloneAndCompare(List<Shape> shapes, List<Shape> shapesCopy) {
+		for (Shape shape : shapes) {
+			shapesCopy.add(shape.clone());
+		}
+
+		for (int i = 0; i < shapes.size(); i++) {
+			if (shapes.get(i) != shapesCopy.get(i)) {
+				System.out.println(i + ": Shapes are different objects!");
+				if (shapes.get(i).equals(shapesCopy.get(i))) {
+					System.out.println(i + ": And they are identical!");
+				} else {
+					System.out.println(i + ": But they are not identical!");
+				}
+			} else {
+				System.out.println(i + ": Shape objects are the same!");
+			}
+		}
+	}
 }
