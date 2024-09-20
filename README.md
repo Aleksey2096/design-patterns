@@ -42,3 +42,8 @@ The Specification pattern allows for the creation of combinable, reusable busine
 
 [Java example](src/main/java/com/example/patterns/behavioral/specification/)
 
+### 9. State
+The State pattern allows an object to alter its behavior when its internal state changes. Instead of using conditionals to handle different states, the object delegates state-specific behavior to separate state objects. This makes the system more flexible and easier to extend, as new states can be added without modifying the existing code. It is typically used in state machines, workflow engines, and UI components that change behavior based on user actions or inputs.
+
+[Java example](src/main/java/com/example/patterns/behavioral/state/)
+

@@ -1,8 +1,8 @@
 package com.example.patterns.behavioral.state;
 
-class Vibration implements MobileAlertState {
-    @Override
-    public void alert(final AlertStateContext ctx) {
-        System.out.println(" vibration... ");
-    }
+public class Vibration implements MobileAlertState {
+	@Override
+	public void alert(AlertStateContext ctx) {
+		System.out.println(" vibration... ");
+	}
 }
