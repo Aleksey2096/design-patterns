@@ -108,4 +108,8 @@ The Composite pattern allows individual objects and groups of objects to be trea
 
 [Java example 2](src/main/java/com/example/patterns/structural/composite/example2/) (This example shows how to create complex graphical shapes, composed of simpler shapes and treat both of them uniformly.)
 
+### 4. Decorator
+The Decorator pattern allows behavior to be added to individual objects dynamically without affecting other objects from the same class. This is done by wrapping an object with a decorator class that adds the new functionality. It provides an alternative to subclassing for extending functionality. Decorators are often used in scenarios where classes need to be extended in various ways, such as adding functionality to UI elements or enhancing core services in a flexible manner.
+
+[Java example](src/main/java/com/example/patterns/structural/decorator/) (This example shows how you can adjust the behavior of an object without changing its code. Initially, the business logic class could only read and write data in plain text. Then we created several small wrapper classes that add new behavior after executing standard operations in a wrapped object. The first wrapper encrypts and decrypts data, and the second one compresses and extracts data. You can even combine these wrappers by wrapping one decorator with another.)
 

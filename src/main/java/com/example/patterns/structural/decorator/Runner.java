@@ -1,24 +1,20 @@
 package com.example.patterns.structural.decorator;
 
-import java.text.DecimalFormat;
-
 public class Runner {
-	public static void main(final String[] args) {
-		DecimalFormat format = new DecimalFormat("#.##");
-		Pizza pizza = new SimplyVegPizza();
 
-		pizza = new RomaTomatoes(pizza);
-		pizza = new RedOnions(pizza);
+	private static final String FILE_PATH = "src/main/java/com/example/patterns/structural/decorator/OutputDemo.txt";
 
-		System.out.println("Desc: " + pizza.getDesc());
-		System.out.println("Price: " + format.format(pizza.getPrice()));
+	public static void main(String[] args) {
+		String salaryRecords = "Name,Salary\nJohn Smith,100000\nSteven Jobs,912000";
+		DataSourceDecorator encoded = new CompressionDecorator(new EncryptionDecorator(new FileDataSource(FILE_PATH)));
+		encoded.writeData(salaryRecords);
+		DataSource plain = new FileDataSource(FILE_PATH);
 
-		pizza = new SimplyNonVegPizza();
-
-		pizza = new RomaTomatoes(pizza);
-		pizza = new RedOnions(pizza);
-
-		System.out.println("Desc: " + pizza.getDesc());
-		System.out.println("Price: " + format.format(pizza.getPrice()));
+		System.out.println("- Input ----------------");
+		System.out.println(salaryRecords);
+		System.out.println("- Encoded --------------");
+		System.out.println(plain.readData());
+		System.out.println("- Decoded --------------");
+		System.out.println(encoded.readData());
 	}
 }
