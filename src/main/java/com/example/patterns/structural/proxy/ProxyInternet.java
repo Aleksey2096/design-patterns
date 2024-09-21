@@ -4,24 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProxyInternet implements Internet {
-    private final Internet internet = new RealInternet();
-    private static final List<String> bannedSites;
+	private final Internet internet = new RealInternet();
+	private static final List<String> BANNED_SITES = new ArrayList<>();
 
-    static {
-        bannedSites = new ArrayList<>();
-        bannedSites.add("abc.com");
-        bannedSites.add("def.com");
-        bannedSites.add("ijk.com");
-        bannedSites.add("lnm.com");
-    }
+	static {
+		BANNED_SITES.add("abc.com");
+		BANNED_SITES.add("def.com");
+		BANNED_SITES.add("ijk.com");
+		BANNED_SITES.add("lnm.com");
+	}
 
-    @Override
-    public void connectTo(final String serverHost) throws Exception {
-        if (bannedSites.contains(serverHost.toLowerCase())) {
-            throw new Exception("Access Denied");
-        }
-
-        internet.connectTo(serverHost);
-    }
-
+	@Override
+	public void connectTo(String serverHost) throws Exception {
+		if (BANNED_SITES.contains(serverHost.toLowerCase())) {
+			throw new Exception("Access to " + serverHost + " Denied");
+		}
+		internet.connectTo(serverHost);
+	}
 }
