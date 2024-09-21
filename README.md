@@ -113,3 +113,8 @@ The Decorator pattern allows behavior to be added to individual objects dynamica
 
 [Java example](src/main/java/com/example/patterns/structural/decorator/) (This example shows how you can adjust the behavior of an object without changing its code. Initially, the business logic class could only read and write data in plain text. Then we created several small wrapper classes that add new behavior after executing standard operations in a wrapped object. The first wrapper encrypts and decrypts data, and the second one compresses and extracts data. You can even combine these wrappers by wrapping one decorator with another.)
 
+### 5. Facade
+The Facade pattern provides a simplified interface to a complex system of classes, libraries, or subsystems. It hides the complexity of the system and offers a more straightforward interface to the client, making the system easier to use. This pattern is useful when dealing with large, complex APIs or systems that the client does not need to fully understand. It's commonly applied in frameworks, software libraries, and complex service layers.
+
+[Java example](src/main/java/com/example/patterns/structural/facade/)
+

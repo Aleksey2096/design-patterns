@@ -1,9 +1,8 @@
 package com.example.patterns.structural.facade;
 
 public class Runner {
-	public static void main(final String[] args) {
-		ReportGeneratorFacade.generateReport(ReportType.HTML, null);
-
-		ReportGeneratorFacade.generateReport(ReportType.PDF, null);
+	public static void main(String[] args) {
+		VideoConversionFacade converter = new VideoConversionFacade();
+		converter.convertVideo("youtubevideo.ogg", "mp4");
 	}
 }
