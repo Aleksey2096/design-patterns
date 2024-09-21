@@ -1,7 +1,7 @@
-package com.example.patterns.structural.composite;
+package com.example.patterns.structural.composite.example1;
 
 public class Runner {
-	public static void main(final String[] args) {
+	public static void main(String[] args) {
 		HtmlTag parentTag = new HtmlParentElement("<html>");
 		parentTag.setStartTag("<html>");
 		parentTag.setEndTag("</html>");

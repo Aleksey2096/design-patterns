@@ -101,3 +101,9 @@ The Bridge pattern decouples an abstraction from its implementation, allowing th
 
 [Java example](src/main/java/com/example/patterns/structural/bridge/)
 
+### 3. Composite
+The Composite pattern allows individual objects and groups of objects to be treated uniformly. It organizes objects into tree structures to represent part-whole hierarchies. This pattern is particularly useful when individual objects and compositions of objects need to be accessed in a consistent manner. The client can interact with both simple and complex objects through the same interface. Commonly used in file systems, graphical user interfaces (GUIs), and document processing systems.
+
+[Java example 1](src/main/java/com/example/patterns/structural/composite/example1/) (HTML tag example)
+[Java example 2](src/main/java/com/example/patterns/structural/composite/example2/) (This example shows how to create complex graphical shapes, composed of simpler shapes and treat both of them uniformly.)
+
