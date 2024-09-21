@@ -1,10 +1,21 @@
 package com.example.patterns.structural.bridge;
 
 public class Runner {
-    public static void main(final String[] args) {
-        Vehicle vehicle1 = new Car(new Produce(), new Assemble());
-        vehicle1.manufacture();
-        Vehicle vehicle2 = new Bike(new Produce(), new Assemble());
-        vehicle2.manufacture();
-    }
+	public static void main(String[] args) {
+		testDevice(new TV());
+		testDevice(new Radio());
+	}
+
+	public static void testDevice(Device device) {
+		System.out.println("Tests with basic remote.");
+		BasicRemote basicRemote = new BasicRemote(device);
+		basicRemote.power();
+		device.printStatus();
+
+		System.out.println("Tests with advanced remote.");
+		AdvancedRemote advancedRemote = new AdvancedRemote(device);
+		advancedRemote.power();
+		advancedRemote.mute();
+		device.printStatus();
+	}
 }
