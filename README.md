@@ -5,11 +5,11 @@
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
-  <ol>
+  <ul>
     <li><a href="#behavioral-patterns">Behavioral patterns</a></li>
     <li><a href="#creational-patterns">Creational patterns</a></li>
     <li><a href="#structural-patterns">Structural patterns</a></li>
-  </ol>
+  </ul>
 </details>
 
 ## Behavioral patterns
