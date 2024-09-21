@@ -94,5 +94,5 @@ The Singleton pattern ensures that a class has only one instance and provides a 
 ### 1. Adapter
 The Adapter pattern allows objects with incompatible interfaces to work together by creating an intermediary that adapts one interface to another. It acts as a wrapper, converting the interface of a class into another interface that a client expects. This pattern is useful when integrating existing classes with a new system, or when using third-party libraries that don’t match your desired interface. It's commonly seen in legacy code integration and APIs.
 
-[Java example](src/main/java/com/example/patterns/creational/adapter/)
+[Java example](src/main/java/com/example/patterns/structural/adapter/)
 
