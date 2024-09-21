@@ -1,4 +1,16 @@
+<a name="readme-top"></a>
+
 # Software design pattern in Java & Python
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#behavioral-patterns">Behavioral patterns</a></li>
+    <li><a href="#creational-patterns">Creational patterns</a></li>
+    <li><a href="#structural-patterns">Structural patterns</a></li>
+  </ol>
+</details>
 
 ## Behavioral patterns
 
@@ -62,6 +74,8 @@ The Visitor pattern allows adding new operations to a class hierarchy without ch
 
 [Java example](src/main/java/com/example/patterns/behavioral/visitor/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Creational patterns
 
 ### 1. Abstract Factory
@@ -88,6 +102,8 @@ The Prototype pattern allows an object to create a copy of itself, enabling the 
 The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. This pattern is useful in scenarios where exactly one object is needed to coordinate actions across the system, such as database connection pools, configuration managers, or logging services. By restricting the instantiation of a class, the Singleton pattern ensures that there is a single, shared instance throughout the application's lifetime, preventing resource conflicts and ensuring centralized control.
 
 [Java example](src/main/java/com/example/patterns/creational/singleton/) (This directory contains six different examples of the Singleton pattern implemented in Java.)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Structural patterns
 
@@ -128,3 +144,4 @@ The Proxy pattern provides a placeholder or surrogate for another object to cont
 
 [Java example](src/main/java/com/example/patterns/structural/proxy/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
