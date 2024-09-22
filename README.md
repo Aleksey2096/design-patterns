@@ -104,10 +104,14 @@ The Specification pattern allows for the creation of combinable, reusable busine
 
 [Java example](src/main/java/com/example/patterns/behavioral/specification/)
 
+[Python example](python/behavioral/specification.py)
+
 ### 9. State
 The State pattern allows an object to alter its behavior when its internal state changes. Instead of using conditionals to handle different states, the object delegates state-specific behavior to separate state objects. This makes the system more flexible and easier to extend, as new states can be added without modifying the existing code. It is typically used in state machines, workflow engines, and UI components that change behavior based on user actions or inputs.
 
 [Java example](src/main/java/com/example/patterns/behavioral/state/)
+
+[Python example](python/behavioral/state.py)
 
 ### 10. Strategy
 The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. The algorithm can vary independently from the client that uses it. This pattern promotes the Open/Closed Principle, as new strategies can be introduced without changing the context in which they are used. It's commonly applied in sorting algorithms, data compression, and payment processing systems.
