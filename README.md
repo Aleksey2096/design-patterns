@@ -69,6 +69,8 @@ The Interpreter pattern defines a representation for a grammar of a language and
 
 [Java example](src/main/java/com/example/patterns/behavioral/interpreter/)
 
+[Python example](python/behavioral/interpreter.py)
+
 ### 4. Iterator
 The Iterator pattern provides a way to access the elements of a collection or aggregate object sequentially without exposing the underlying implementation. It defines an interface for traversing a collection, so that different types of collections can be iterated in a uniform manner. This pattern enhances flexibility and decouples the client from the collection's internal structure, allowing the same interface to be used across different types of collections.
 
