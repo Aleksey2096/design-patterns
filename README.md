@@ -9,40 +9,40 @@
     <li>
       <a href="#behavioral-patterns">Behavioral patterns</a>
       <ol>
-        <li><a href="#1.-chain-of-responsibility">Chain of Responsibility</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
+          <li><a href="#1-chain-of-responsibility">Chain of Responsibility</a></li>
+          <li><a href="#2-command">Command</a></li>
+          <li><a href="#3-interpreter">Interpreter</a></li>
+          <li><a href="#4-iterator">Iterator</a></li>
+          <li><a href="#5-mediator">Mediator</a></li>
+          <li><a href="#6-memento">Memento</a></li>
+          <li><a href="#7-observer">Observer</a></li>
+          <li><a href="#8-specification">Specification</a></li>
+          <li><a href="#9-state">State</a></li>
+          <li><a href="#10-strategy">Strategy</a></li>
+          <li><a href="#11-template-method">Template Method</a></li>
+          <li><a href="#12-visitor">Visitor</a></li>
       </ol>      
     </li>
     <li>
       <a href="#creational-patterns">Creational patterns</a>
       <ol>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#1-abstract-factory">Abstract Factory</a></li>
+        <li><a href="#2-builder">Builder</a></li>
+        <li><a href="#3-factory-method">Factory Method</a></li>
+        <li><a href="#4-prototype">Prototype</a></li>
+        <li><a href="#5-singleton">Singleton</a></li>
       </ol>      
     </li>
     <li>
       <a href="#structural-patterns">Structural patterns</a>
       <ol>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#1-adapter">Adapter</a></li>
+        <li><a href="#2-bridge">Bridge</a></li>
+        <li><a href="#3-composite">Composite</a></li>
+        <li><a href="#4-decorator">Decorator</a></li>
+        <li><a href="#5-facade">Facade</a></li>
+        <li><a href="#6-flyweight">Flyweight</a></li>
+        <li><a href="#7-proxy">Proxy</a></li>
       </ol>  
     </li>
   </ul>
