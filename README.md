@@ -25,7 +25,7 @@
     </li>
     <li>
       <a href="#creational-patterns">Creational patterns</a>
-      <ol>
+      <ol type="1">
         <li><a href="#1-abstract-factory">Abstract Factory</a></li>
         <li><a href="#2-builder">Builder</a></li>
         <li><a href="#3-factory-method">Factory Method</a></li>
@@ -35,7 +35,7 @@
     </li>
     <li>
       <a href="#structural-patterns">Structural patterns</a>
-      <ol>
+      <ol type="1">
         <li><a href="#1-adapter">Adapter</a></li>
         <li><a href="#2-bridge">Bridge</a></li>
         <li><a href="#3-composite">Composite</a></li>
