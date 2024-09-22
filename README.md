@@ -8,19 +8,19 @@
   <ul>
     <li>
       <a href="#behavioral-patterns">Behavioral patterns</a>
-      <ol>
-          <li><a href="#1-chain-of-responsibility">Chain of Responsibility</a></li>
-          <li><a href="#2-command">Command</a></li>
-          <li><a href="#3-interpreter">Interpreter</a></li>
-          <li><a href="#4-iterator">Iterator</a></li>
-          <li><a href="#5-mediator">Mediator</a></li>
-          <li><a href="#6-memento">Memento</a></li>
-          <li><a href="#7-observer">Observer</a></li>
-          <li><a href="#8-specification">Specification</a></li>
-          <li><a href="#9-state">State</a></li>
-          <li><a href="#10-strategy">Strategy</a></li>
-          <li><a href="#11-template-method">Template Method</a></li>
-          <li><a href="#12-visitor">Visitor</a></li>
+      <ol type="1">
+        <li><a href="#1-chain-of-responsibility">Chain of Responsibility</a></li>
+        <li><a href="#2-command">Command</a></li>
+        <li><a href="#3-interpreter">Interpreter</a></li>
+        <li><a href="#4-iterator">Iterator</a></li>
+        <li><a href="#5-mediator">Mediator</a></li>
+        <li><a href="#6-memento">Memento</a></li>
+        <li><a href="#7-observer">Observer</a></li>
+        <li><a href="#8-specification">Specification</a></li>
+        <li><a href="#9-state">State</a></li>
+        <li><a href="#10-strategy">Strategy</a></li>
+        <li><a href="#11-template-method">Template Method</a></li>
+        <li><a href="#12-visitor">Visitor</a></li>
       </ol>      
     </li>
     <li>
