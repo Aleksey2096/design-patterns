@@ -83,6 +83,8 @@ The Mediator pattern centralizes complex communication and control logic between
 
 [Java example](src/main/java/com/example/patterns/behavioral/mediator/)
 
+[Python example](python/behavioral/mediator.py)
+
 ### 6. Memento
 The Memento pattern provides the ability to capture and save an object’s current state without violating its encapsulation. This allows the state to be restored at a later time. It is commonly used for implementing undo/redo functionality, checkpointing, or rollback operations. The Memento pattern separates the object's internal state from external manipulation, ensuring that only the object itself can modify its internal state.
 
