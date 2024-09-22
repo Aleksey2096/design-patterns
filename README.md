@@ -6,9 +6,45 @@
 <details>
   <summary>Table of Contents</summary>
   <ul>
-    <li><a href="#behavioral-patterns">Behavioral patterns</a></li>
-    <li><a href="#creational-patterns">Creational patterns</a></li>
-    <li><a href="#structural-patterns">Structural patterns</a></li>
+    <li>
+      <a href="#behavioral-patterns">Behavioral patterns</a>
+      <ol>
+        <li><a href="#1.-chain-of-responsibility">Chain of Responsibility</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ol>      
+    </li>
+    <li>
+      <a href="#creational-patterns">Creational patterns</a>
+      <ol>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ol>      
+    </li>
+    <li>
+      <a href="#structural-patterns">Structural patterns</a>
+      <ol>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ol>  
+    </li>
   </ul>
 </details>
 
