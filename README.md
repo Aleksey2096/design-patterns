@@ -90,6 +90,8 @@ The Memento pattern provides the ability to capture and save an object’s curre
 
 [Java example](src/main/java/com/example/patterns/behavioral/memento/)
 
+[Python example](python/behavioral/memento.py)
+
 ### 7. Observer
 The Observer pattern defines a one-to-many relationship between objects, where a subject notifies multiple observers of any state changes. This promotes a loosely coupled interaction where the subject only knows about the observers' interfaces, not their specific implementations. The pattern is commonly used in event-driven systems, such as UI frameworks, where the state of one component needs to automatically update other dependent components.
 
