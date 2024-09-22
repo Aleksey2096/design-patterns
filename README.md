@@ -55,6 +55,8 @@ The Chain of Responsibility pattern allows multiple objects to handle a request 
 
 [Java example](src/main/java/com/example/patterns/behavioral/chain_of_responsibility/)
 
+[Python example](python/behavioral/chain_of_responsibility.py)
+
 ### 2. Command
 The Command pattern encapsulates a request as an object, allowing clients to parameterize methods with different requests, queue requests, and log or undo them. This pattern provides a way to decouple the object that sends a command from the object that knows how to execute it. Commands can be stored, passed, and executed at a later time, supporting undo and redo operations. It's commonly used in menu-driven interfaces, transactional systems, and macro recording.
 
