@@ -173,6 +173,10 @@ The Singleton pattern ensures that a class has only one instance and provides a 
 
 [Java example](src/main/java/com/example/patterns/creational/singleton/) (This directory contains six different examples of the Singleton pattern implemented in Java.)
 
+[Python example 1](python/creational/singleton_naive.py) (Naive Singleton)
+
+[Python example 2](python/creational/singleton_thread-safe.py) (Thread-safe Singleton)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Structural patterns
