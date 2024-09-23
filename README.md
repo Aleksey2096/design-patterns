@@ -218,6 +218,8 @@ The Facade pattern provides a simplified interface to a complex system of classe
 
 [Java example](src/main/java/com/example/patterns/structural/facade/)
 
+[Python example](python/structural/facade.py)
+
 ### 6. Flyweight
 The Flyweight pattern minimizes memory usage by sharing as much data as possible with similar objects. It is especially useful when a large number of similar objects are created, as it reduces memory consumption by storing common properties externally and only keeping the unique parts within the objects. This pattern is commonly used in scenarios involving large datasets, like text editors, 3D modeling systems, and game development, where a large number of objects need to be managed efficiently.
 
