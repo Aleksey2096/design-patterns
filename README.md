@@ -225,6 +225,8 @@ The Flyweight pattern minimizes memory usage by sharing as much data as possible
 
 [Java example](src/main/java/com/example/patterns/structural/flyweight/)
 
+[Python example](python/structural/flyweight.py)
+
 ### 7. Proxy
 The Proxy pattern provides a placeholder or surrogate for another object to control access to it. It acts as an intermediary that controls the creation, use, or behavior of the object it represents. Proxies are often used for lazy initialization, access control, logging, or remote service invocation. Common use cases include virtual proxies that delay object creation, protection proxies that manage access control, and remote proxies that represent objects over a network (e.g., in distributed systems).
 
