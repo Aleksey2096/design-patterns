@@ -204,6 +204,8 @@ The Composite pattern allows individual objects and groups of objects to be trea
 
 [Java example 2](src/main/java/com/example/patterns/structural/composite/example2/) (This example shows how to create complex graphical shapes, composed of simpler shapes and treat both of them uniformly.)
 
+[Python example](python/structural/composite.py)
+
 ### 4. Decorator
 The Decorator pattern allows behavior to be added to individual objects dynamically without affecting other objects from the same class. This is done by wrapping an object with a decorator class that adds the new functionality. It provides an alternative to subclassing for extending functionality. Decorators are often used in scenarios where classes need to be extended in various ways, such as adding functionality to UI elements or enhancing core services in a flexible manner.
 
