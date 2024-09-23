@@ -232,4 +232,6 @@ The Proxy pattern provides a placeholder or surrogate for another object to cont
 
 [Java example](src/main/java/com/example/patterns/structural/proxy/)
 
+[Python example](python/structural/proxy.py)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
