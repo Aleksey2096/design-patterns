@@ -166,6 +166,8 @@ The Prototype pattern allows an object to create a copy of itself, enabling the 
 
 [Java example](src/main/java/com/example/patterns/creational/prototype/)
 
+[Python example](python/creational/prototype.py)
+
 ### 5. Singleton
 The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. This pattern is useful in scenarios where exactly one object is needed to coordinate actions across the system, such as database connection pools, configuration managers, or logging services. By restricting the instantiation of a class, the Singleton pattern ensures that there is a single, shared instance throughout the application's lifetime, preventing resource conflicts and ensuring centralized control.
 
