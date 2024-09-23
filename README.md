@@ -186,6 +186,10 @@ The Adapter pattern allows objects with incompatible interfaces to work together
 
 [Java example](src/main/java/com/example/patterns/structural/adapter/)
 
+[Python example 1](python/structural/adapter_inheritance.py) (via inheritance)
+
+[Python example 2](python/structural/adapter_composition.py) (via composition)
+
 ### 2. Bridge
 The Bridge pattern decouples an abstraction from its implementation, allowing them to vary independently. By using this pattern, you can separate the interface (abstraction) from the actual implementation, and both can evolve separately without affecting each other. This is useful in scenarios where an object needs to have multiple variations of its implementation, such as supporting multiple platforms or devices. It is commonly used in UI toolkits and device driver implementations.
 
